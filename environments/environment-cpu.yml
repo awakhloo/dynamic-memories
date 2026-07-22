@@ -1,0 +1,31 @@
+# environment.yml
+name: diffqs
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12.10
+  - pip=25.0.1
+  - pip:
+      - jax==0.6.0
+      - jaxlib==0.6.0
+      - diffrax==0.7.0
+      - equinox==0.12.1
+      - lineax==0.0.8
+      - optimistix==0.0.10
+      - jaxtyping==0.3.1
+
+      - numpy==2.2.5
+      - scipy==1.15.2
+      - pandas==2.2.3
+
+      - matplotlib==3.10.1
+      - seaborn==0.13.2
+      - colormaps==0.4.2
+
+      - tqdm==4.67.1
+
+      # Include these only if notebooks are part of the repository:
+      - jupyterlab==4.4.1
+      - ipykernel==6.29.5

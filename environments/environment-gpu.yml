@@ -1,0 +1,37 @@
+name: diffqs-gpu
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12.10
+  - pip=25.0.1
+  - pip:
+      # Numerical computation
+      - numpy==2.2.5
+      - scipy==1.15.2
+      - pandas==2.2.3
+
+      # GPU-enabled JAX
+      - "jax[cuda12]==0.6.0"
+
+      # Differential equations
+      - diffrax==0.7.0
+      - equinox==0.12.1
+      - lineax==0.0.8
+      - optimistix==0.0.10
+      - jaxtyping==0.3.1
+      - wadler-lindig==0.1.5
+
+      # Plotting
+      - matplotlib==3.10.1
+      - seaborn==0.13.2
+      - colormaps==0.4.2
+      - pillow==11.2.1
+
+      # Utilities and notebooks
+      - tqdm==4.67.1
+      - pyyaml==6.0.2
+      - jupyterlab==4.4.1
+      - ipykernel==6.29.5
+      - pytest
